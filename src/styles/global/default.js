@@ -19,7 +19,7 @@ export const BlockTitle = styled.div`
   }
 `;
 
-export const BlockContentwrap = styled.div`
+export const BlockContentWrap = styled.div`
   margin-top: 30px;
 
   ${media.xxl`

@@ -50,11 +50,11 @@ const GlobalStyles = createGlobalStyle`
     width: 100%;
   }
 
-  .content-wrapper { 
+  .content-wrapper {
     flex: 1;
     max-width: 1600px;
     margin-right: auto;
-    maargin-left: auto;
+    margin-left: auto;
   }
 
   .scrollbar {
@@ -73,17 +73,18 @@ const GlobalStyles = createGlobalStyle`
       outline: 1px solid rgba(0, 0, 0, 0.02);
       outline-offset: -1px;
     }
+  }
+  
+  .content-area {
+    margin: 16px;
+    ${media.xs`
+      margin: 12px;
+    `}
+  }
 
-    .content-area {
-      margin: 16px;
-      ${media.xs`
-        margin: 12px;
-      `}
-    }
-
-    .text {
-      color: ${(props) => props.theme.colors.gray700};
-    }
+  .text {
+    color: ${(props) => props.theme.colors.gray700};
+  }
 `;
 
 export default GlobalStyles;
